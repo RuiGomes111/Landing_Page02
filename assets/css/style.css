@@ -6,7 +6,7 @@
   font-optical-sizing: auto;
   scroll-behavior: smooth;
 }
-*::selection{
+*::selection {
   background-color: #bf16169f;
   color: #ddd;
 }
@@ -27,7 +27,7 @@ main {
 }
 
 #home {
-  background: url("/assets/img/pic6.jpg");
+  background: url("./assets/img/pic6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -46,36 +46,33 @@ main {
 .about .pri {
   text-justify: center;
   padding: 10px;
- background-color: #33333307;
+  background-color: #33333307;
   width: 600px;
 }
 .about h1 {
   font-size: 80px;
-  filter: drop-shadow(3px 3px 1px #07223F);
+  filter: drop-shadow(3px 3px 1px #07223f);
   width: fit-content;
 }
 .about .pri p {
   font-size: 1.5rem;
   text-wrap: wrap;
   letter-spacing: 1px;
- text-align: justify;
+  text-align: justify;
 }
-.empresa{
+.empresa {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 .suporte {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  
 }
 
-.suporte>div {
+.suporte > div {
   width: 400px;
- 
 }
 .suporte > div,
 .qr {
@@ -102,13 +99,13 @@ main {
   height: 180px;
   border-radius: 8px;
 }
-.suporte img:hover::before{
-content: "Click";
-position: absolute;
-top: -2px;
+.suporte img:hover::before {
+  content: "Click";
+  position: absolute;
+  top: -2px;
 }
 
-.suporte #aos{
+.suporte #aos {
   width: 22rem;
 }
 .qr {
@@ -119,5 +116,4 @@ top: -2px;
 
 .qr > div {
   height: 300px;
-  
 }
