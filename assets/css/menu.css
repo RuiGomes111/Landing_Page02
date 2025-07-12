@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+.navbar {
+  display: flex;
+  background-color: #0d1117;
+  color: #ddd;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+.navbar li::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: red;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar li:hover::before{
+   transform: scaleX(1);
+}
+.navbar h1 a {
+  filter: drop-shadow(10px 4px 4px red);
+  text-decoration: none;
+  color: #ddd;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+.nav-links i {
+  font-size: 35px;
+}
+
+.nav-links :nth-child(1) a:hover::before {
+  content: "Home ";
+  color: white;
+  background-color: rgba(255, 0, 0, 0.463);
+  position: absolute;
+  z-index: 1;
+  top: -1px;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+   
+}
+.nav-links :nth-child(2) a:hover::before {
+  content: "Sobre";
+  color: white;
+  background-color: rgba(255, 0, 0, 0.463);
+  position: absolute;
+  z-index: 1;
+  top: -1px;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+}
+.nav-links :nth-child(3) a:hover::before {
+  content: "Suporte";
+  color: white;
+  background-color: rgba(255, 0, 0, 0.463);
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+}
+.nav-links :nth-child(4) a:hover::before {
+  content: "Inspiração";
+  color: white;
+  background-color: rgba(255, 0, 0, 0.463);
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+}
+.nav-links :nth-child(5) a:hover::before {
+  content: "Carreira";
+  color: white;
+  background-color: rgba(255, 0, 0, 0.463);
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+}
+.nav-links :nth-child(6) a:hover::before {
+  content: "info";
+  color: white;
+  background-color: rgba(255, 0, 0, 0.463);
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
+}
