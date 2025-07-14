@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
 
-.navbar {
+header {
   display: flex;
   background-color: #0d1117;
   color: #ddd;
@@ -25,10 +25,11 @@
 .navbar li:hover::before {
   transform: scaleX(1);
 }
-.navbar h1 a {
+header h1 a {
   filter: drop-shadow(10px 4px 4px red);
   text-decoration: none;
   color: #ddd;
+  font-size: 2rem;
 }
 .nav-links {
   display: flex;
@@ -42,7 +43,7 @@
   text-decoration: none;
 }
 .nav-links i {
-  font-size: 35px;
+  font-size: 2rem;
 }
 
 .nav-links :nth-child(1) a:hover::before {
@@ -53,7 +54,7 @@
   z-index: 1;
   top: -1px;
   justify-content: center;
-  font-size: 16px;
+   font-size: 1rem 0;
   font-family: "Exo 2", sans-serif;
 }
 .nav-links :nth-child(2) a:hover::before {
@@ -64,7 +65,7 @@
   z-index: 1;
   top: -1px;
   justify-content: center;
-  font-size: 16px;
+   font-size: 1rem 0;
   font-family: "Exo 2", sans-serif;
 }
 .nav-links :nth-child(3) a:hover::before {
@@ -75,7 +76,7 @@
   z-index: 1;
   top: -2px;
   justify-content: center;
-  font-size: 16px;
+   font-size: 1rem 0;
   font-family: "Exo 2", sans-serif;
 }
 .nav-links :nth-child(4) a:hover::before {
@@ -86,7 +87,7 @@
   z-index: 1;
   top: -2px;
   justify-content: center;
-  font-size: 16px;
+   font-size: 1rem 0;
   font-family: "Exo 2", sans-serif;
 }
 .nav-links :nth-child(5) a:hover::before {
@@ -97,7 +98,7 @@
   z-index: 1;
   top: -2px;
   justify-content: center;
-  font-size: 16px;
+   font-size: 1rem 0;
   font-family: "Exo 2", sans-serif;
 }
 .nav-links :nth-child(6) a:hover::before {
@@ -108,6 +109,8 @@
   z-index: 1;
   top: -2px;
   justify-content: center;
-  font-size: 16px;
+  font-size: 1rem 0;
   font-family: "Exo 2", sans-serif;
 }
+
+
