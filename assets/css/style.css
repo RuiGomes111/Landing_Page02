@@ -23,8 +23,8 @@ main {
 }
 
 .box {
-  width: 100%;  
-  margin: 0 auto;  
+  width: 100%;
+  margin: 0 auto;
 }
 
 #home {
@@ -71,17 +71,15 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  
 }
 
 .suporte > div {
   width: 20rem;
 }
 .suporte > div,
-.qr {
+.card {
   height: 300px;
   text-align: justify;
-  
 }
 .suporte > #googleFont:hover,
 #aos:hover {
@@ -107,38 +105,47 @@ main {
 .suporte #aos {
   width: 22rem;
 }
-.qr {
+.card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  justify-content: center;
-  align-items: center;  
+  
   width: 100%;
   height: 400px;
+  place-items: center;
 }
 
-.qr > div {
-  width: 100%;
-  max-width: 300px;
+.card > div {
+  
+   clip-path: polygon(
+    10% 5%, 40% 5%, 45% 0%, 50% 5%, 90% 5%, 95% 10%, 95% 90%, 90% 95%,
+    10% 95%, 5% 90%, 5% 15%, 10% 5%
+  );
+   border: 1px dashed #fff;
+  overflow: hidden; 
+  max-width: none;
   height: auto;
-   aspect-ratio: 4 / 3;
-  display: flex;
+  aspect-ratio: 3 / 2;
   margin: auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #06090C;
+  color: #ddd;
 }
-
-footer{
+.card > div img{
+  width: 20rem;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+footer {
   width: 100%;
   padding: 2rem 1rem;
   font-size: 0.9rem;
   text-align: center;
   background-color: #111;
-  color:#fff
+  color: #fff;
 }
-
-
 
 @media (max-width: 768px) {
   .about {
@@ -150,12 +157,12 @@ footer{
     grid-template-columns: 1fr;
   }
 
-  .qr {
+  .card {
     grid-template-columns: 1fr;
     height: auto;
   }
 
-  .qr > div {
+  .card > div {
     width: 100%;
     margin: 10px 0;
   }
