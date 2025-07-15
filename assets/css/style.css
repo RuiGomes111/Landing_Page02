@@ -81,7 +81,7 @@ main {
   height: 300px;
   text-align: justify;
 }
-.suporte > #googleFont:hover,
+.suporte > #googleFont:hover,.card>div:hover,
 #aos:hover {
   transform: scale(1.1);
   transition-duration: 1s;
@@ -151,6 +151,7 @@ footer {
   .about {
     grid-template-columns: 1fr;
     height: auto;
+    width: 2rem;
   }
 
   .suporte {
